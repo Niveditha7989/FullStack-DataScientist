@@ -1,0 +1,125 @@
+1 Scenario: A grocery shopkeeper wants to calculate the bill of 3 items. Prices and quantities should be stored in variables, and the program should display the total cost.
+ 
+Sample Input:
+ 
+Item1 Price: 50, Quantity: 2
+Item2 Price: 30, Quantity: 5
+Item3 Price: 20, Quantity: 3
+ 
+ 
+Expected Output:
+ 
+Total Bill = (50*2) + (30*5) + (20*3) = 100 + 150 + 60 = 310
+
+
+l1=[50,30,20]
+l2=[2,5,3]
+le=len(l1)
+su=0
+for i in range(le):
+    a=l1[i]*l2[i]
+    su+=a
+print("sum:",su)
+---------------------------
+2 Build a calculator that takes two numbers and performs addition, subtraction, multiplication, division, and modulus.
+ 
+Sample Input:
+ 
+Enter first number: 15
+Enter second number: 4
+ 
+ 
+Expected Output:
+ 
+Addition = 19
+Subtraction = 11
+Multiplication = 60
+Division = 3.75
+Modulus = 3
+
+
+a=int(input("enter first anumber:"))
+b=int(input("enter second number:"))
+print("Addition:",a+b)
+print("subtraction:",a-b)
+print("multiplication:",a*b)
+print("modulus:",a%b)
+if(b==0):
+    print("error")
+else:
+    print("division:",a/b)
+
+-------------------
+3 A teacher wants a grading system where marks are input, and the grade is displayed.
+ 
+Sample Input:
+ 
+Enter marks: 82
+ 
+ 
+Expected Output:
+ 
+Grade: A (Excellent)
+ 
+ 
+(Rules: >=90 → A+, 80–89 → A, 70–79 → B, 60–69 → C, <60 → Fail)
+
+
+
+a=int(input("enter marks:"))
+if(a>=90):
+    print("Grade A+")
+elif(a<90 and a>=80):
+    print("Grade A")
+elif(a<80 and a>=70):
+    print("Grade B")
+elif(a<70 and a>=60):
+    print("Grade C ")
+elif(a<60):
+    print("Fail")
+----------------
+4 Student Marks List
+Scenario: Store marks of 5 students in a list. Display the highest, lowest, and average marks.
+ 
+Sample Input:
+ 
+Marks: [45, 78, 88, 56, 90]
+ 
+ 
+Expected Output:
+ 
+Highest Marks = 90
+Lowest Marks = 45
+Average Marks = 71.4
+
+
+
+
+l=[45,78,88,56,90]
+print("Highest marks:",max(l))
+print("Lowest marks:",min(l))
+print("Average marks:",sum(l)/len(l))
+
+-------------------
+5 Create a phonebook using a dictionary where names are keys and numbers are values. Allow searching for a number by name.
+ 
+Sample Input:
+ 
+Phonebook = {"Suhel": 9876543210, "Ravi": 9123456780, "Anita": 9988776655}
+Search Name: Ravi
+ 
+ 
+Expected Output:
+ 
+Phone Number of Ravi: 9123456780
+
+
+
+
+numbers={"Suhel": 9876543210, "Ravi": 9123456780, "Anita": 9988776655}
+str=input("enter person name:")
+print("phone number of ",str,":",numbers.get(str))
+
+---------------------------------------------------------
+
+
