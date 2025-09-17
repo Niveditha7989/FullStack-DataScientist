@@ -50,3 +50,4 @@ if __name__ == "__main__":
         print("Inserted book:", created_book)
     except Exception as e:
         print("Failed to insert book:", e)
+
